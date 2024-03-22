@@ -1,4 +1,4 @@
-import React from "../../../ReactTemplateForms/node_modules/@types/react";
+import React from "react";
 
 
 const Profile = (props) => {

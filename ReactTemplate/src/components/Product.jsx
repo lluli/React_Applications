@@ -1,0 +1,12 @@
+import React from "react";
+
+
+const Product = (props) => {
+    return (<div id="Product">
+    <h1 id="name">{props.name}</h1>
+    <p id="description">{props.description}</p>
+    <p id="price">{props.price}</p>
+  </div>)
+}
+  export default Product;
+  

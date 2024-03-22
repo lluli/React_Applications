@@ -1,17 +1,18 @@
-import React from "react";
-import stillWoozyImage from '/Users/ledialuli/Documents/Makers/React_Applications/GigReactTemplate/src/assets/Still-Woozy.jpeg';
+import React from "../../../ReactTemplateForms/node_modules/@types/react";
 
+const Gig = (props) => {
+  return (
+    <div id="Gig">
+      <h3 id="band" data-testid="band">{props.name}</h3>
+      <img width='500px' src={props.image} alt="BandImage"/>
+      <p className="description" data-testid="description">{props.description}</p>
+      <p className="t-a-d" data-testid="timedate">{props.timedate}</p>
+      <p className="location" data-testid="location">{props.location}</p>
+    </div>
+  );
+};
 
-const Gig = () => {
-    return (<div id="Gig">
-    <h3 id="band">Still Woozy</h3>
-    <img src={stillWoozyImage} alt="Still Woozy"/>
-    <p className="desciption">This is a gig</p>
-    <p className="t-a-d">21/03/2024 at 9pm</p>
-    <p className="location">London</p>
-  </div>)
-}
-  export default Gig;
+export default Gig;
   
 
   // // Create a component called Gig, which contains information 
